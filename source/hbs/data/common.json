@@ -1,0 +1,108 @@
+{
+
+
+
+  "support":
+  {
+    "gettingStarter":
+    {
+      "support-type-cell-icon": "question-black-63",
+      "type-title": "Getting Started",
+      "description": "Our quick step-by-step guides to get you started"
+    },
+    "documentCenter":
+    {
+      "support-type-cell-icon": "like-black-63",
+      "type-title": "Document Center",
+      "description": "A full range of technical and other related documents"
+    },
+    "FAQS":
+    {
+      "support-type-cell-icon": "faq-black-63",
+      "type-title": "FAQs",
+      "description": "The best place to help you find the answers you need"
+    }
+  },
+
+
+
+
+  "gettingStarted":
+  {
+    "logging":
+    {
+      "title-list":"Logging in",
+      "description": "Praesent luctus risus ac ligula tincidunt, sed vestibulum orci posuere. Nam consequat volutpat felis quis gravida.",
+      "more": "3"
+    },
+    "tracking":
+    {
+      "title-list":"tracking shipments",
+      "description": "Donec consequat lorem nec ligula tincidunt, sed vestibulum orci posuere. Nam consequat volutpat felis quis gravida. "
+    },
+    "customs":
+    {
+      "title-list":"customs",
+      "description": "Aenean fermentum consequat tristique. Vestibulum sodales tincidunt dolor, vitae vehicula eros sodales eget.",
+      "more": "3"
+    },
+    "help":
+    {
+      "title-list":"Help & Support",
+      "description": "Mauris quis massa laoreet nulla maximus pharetra. Vestibulum sodales tincidunt dolor, vitae vehicula eros sodales eget."
+    }
+  },
+
+
+
+
+  "faq":
+  {
+    "topQuestion":
+    {
+      "title-list":"Top Questions"
+    },
+    "general":
+    {
+      "title-list":"general",
+      "less" : "2"
+    },
+    "accounting":
+    {
+      "title-list":"accounting",
+      "more" : "3"
+    },
+    "airlines":
+    {
+      "title-list":"airlines"
+    },
+    "forwarders":
+    {
+      "title-list":"forwarders",
+      "text": "true"
+    },
+    "logistics":
+    {
+      "title-list":"third party logistics"
+    }
+  },
+
+
+
+  "contactForm":
+  {
+    "askQuestion":
+    {
+      "formTitle": "Ask a question",
+      "formDescription" : "Didn't find what you were looking for, please submit your question here we'd like to hear from you"
+    },
+    "getInTouch":
+    {
+      "formTitle": "Get In Touch",
+      "formDescription" : "If you have any questions about Calogi, please feel free to contact us via the form below"
+    }
+  }
+
+
+
+}
