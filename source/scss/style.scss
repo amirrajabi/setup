@@ -1,21 +1,31 @@
+/*
+** Vendor
+*/
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "type";
+
+
+
+/*
+** General
+*/
 @import "variable";
+@import "type";
+@import "icon-font";
 @import "general";
 @import "header";
-@import "primary-nav";
-@import "mobile-nav";
+@import "navigation";
+@import "hero";
 @import "footer";
-@import "mediaquery-general";
+
+
 
 /*
 ** Home
 */
-@import "home/hero-banner";
-@import "home/start-trading";
-@import "home/archive-list";
-@import "home/daily-outlook";
-@import "home/horizontal-image";
-@import "home/try-form";
-@import "home/risk-warning";
-@import "home/follow-us";
+
+
+
+
+/*
+** About
+*/
