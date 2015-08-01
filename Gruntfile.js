@@ -73,7 +73,7 @@ module.exports = function (grunt) {
 					sourceMap: true
 				},
 				files: {
-					'public/css/style.css': 'source/scss/style.scss'
+					'public/css/style.css': 'source/scss/**/*.scss'
 				}
 			}
 		},
