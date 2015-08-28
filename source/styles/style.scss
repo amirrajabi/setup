@@ -1,31 +1,6 @@
-/*
-** Vendor
-*/
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+//Global styles
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-
-
-/*
-** General
-*/
-@import "variable";
-@import "type";
-@import "icon-font";
-@import "general";
-@import "header";
-@import "navigation";
-@import "hero";
-@import "footer";
-
-
-
-/*
-** Home
-*/
-
-
-
-
-/*
-** About
-*/
+//Custom styles
+@import "modules/font-icon";
+@import "modules/test";
