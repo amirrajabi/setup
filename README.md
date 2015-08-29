@@ -13,26 +13,25 @@ Install bower:
 
     grunt build runs the bower too
 
-To run a grunt build:
+To run a grunt build with hbs file:
 
-    grunt build
+    grunt build-hbs
 
-To start a web server and watch for file changes:
+To run a grunt build with html file:
 
-    grunt default
-
-Then open [http://localhost:1111](http://localhost:1111) in your web browser
+    grunt build-html
 
 To generate a font icon from SVG
 
     grunt generateIconFont
 
+Then open [http://localhost:1111](http://localhost:1111) in your web browser
+
 # Building the project
 
 The project uses Grunt to build assemble the html, minify and concatenate the assets into the `public` folder. The main grunt tasks are:
 
-* `grunt build`: runs an entire build from scratch, running all grunt tasks and compiling the flat site into the `public` directory
-* `grunt default`: watches for changes to files, and runs tasks relating to the file changes
+* `grunt build-hbs` & `grunt build-html`: runs an entire build from scratch, running all grunt tasks and compiling the flat site into the `public` directory
 * `grunt generateIconFont`: Generate font icon from SVG files automatically 
 
 ## Single grunt tasks explained

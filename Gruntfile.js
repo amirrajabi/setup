@@ -209,7 +209,7 @@ module.exports = function (grunt) {
 
         });
 
-    grunt.registerTask('build', [
+    grunt.registerTask('build-hbs', [
         'bower-install-simple',
         'clean',
         'assemble',
@@ -224,7 +224,7 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
-    grunt.registerTask('html', [
+    grunt.registerTask('build-html', [
         'bower-install-simple',
         'clean',
         'sass',
@@ -235,11 +235,6 @@ module.exports = function (grunt) {
         'uglify',
         'copy:html',
         'copy:assets',
-        'connect',
-        'watch'
-    ]);
-
-    grunt.registerTask('default', [
         'connect',
         'watch'
     ]);
