@@ -5,6 +5,7 @@
   "description": "automated compilation of SASS, concatenation and minification of js, assemblage of handlebars templates to HTML with validation.",
   "main": "gruntfile.js",
   "htmlSource": "source/html",
+  "hbsSource": "source/hbs",
   "styleSource": "source/styles",
   "cssDestination": "public/css",
   "scriptSource": "source/scripts",

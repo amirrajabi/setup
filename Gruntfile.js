@@ -29,14 +29,14 @@ module.exports = function (grunt) {
 
             assemble: {
                 options: {
-                    layoutdir: '<%= pkg.htmlSource %>/layouts/',
-                    partials: ['<%= pkg.htmlSource %>/components/**/*.hbs'],
-                    helpers: ['<%= pkg.htmlSource %>/helpers/*.js'],
-                    data: '<%= pkg.htmlSource %>/data/*.json'
+                    layoutdir: '<%= pkg.hbsSource %>/layouts/',
+                    partials: ['<%= pkg.hbsSource %>/components/**/*.hbs'],
+                    helpers: ['<%= pkg.hbsSource %>/helpers/*.js'],
+                    data: '<%= pkg.hbsSource %>/data/*.json'
                 },
                 site: {
                     expand: true,
-                    cwd: '<%= pkg.htmlSource %>/pages/',
+                    cwd: '<%= pkg.hbsSource %>/pages/',
                     src: ['**/*.hbs'],
                     dest: 'public/'
                 }
@@ -138,6 +138,17 @@ module.exports = function (grunt) {
             },
 
             copy: {
+                html: {
+                    files: [
+                        {
+                            expand: true,
+                            cwd: '<%= pkg.htmlSource %>',
+                            src: ['**/*'],
+                            dest: 'public/'
+
+                        }
+                    ]
+                },
                 csstoscss: {
                     files: [
                         {
@@ -151,7 +162,6 @@ module.exports = function (grunt) {
                         }
                     ]
                 },
-
                 assets: {
                     files: [
                         {
@@ -180,7 +190,11 @@ module.exports = function (grunt) {
                     livereload: true
                 },
                 html: {
-                    files: ['<%= pkg.htmlSource %>/**/*.hbs'],
+                    files: ['<%= pkg.htmlSource %>/**/*.html'],
+                    tasks: ['copy:html']
+                },
+                hbs: {
+                    files: ['<%= pkg.hbsSource %>/**/*.hbs'],
                     tasks: ['newer:assemble']
                 },
                 scss: {
@@ -205,6 +219,21 @@ module.exports = function (grunt) {
         'jshint',
         'concat',
         'uglify',
+        'copy:assets',
+        'connect',
+        'watch'
+    ]);
+
+    grunt.registerTask('html', [
+        'bower-install-simple',
+        'clean',
+        'sass',
+        'autoprefixer',
+        'cssmin',
+        'jshint',
+        'concat',
+        'uglify',
+        'copy:html',
         'copy:assets',
         'connect',
         'watch'
