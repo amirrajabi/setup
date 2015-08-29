@@ -9421,7 +9421,7 @@ Setup.Test = function(){
     'use strict';
 
     var init = function(){
-        console.log('Run Test module!');
+        console.log('Run Test module now!');
     };
 
     var resize = function(){

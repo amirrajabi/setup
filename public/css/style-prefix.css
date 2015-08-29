@@ -6024,4 +6024,7 @@ button.close {
 
 html,
 body {
-  background-color: #f5871f; }
+  background-color: #000000; }
+
+.test {
+  color: #FFFFFF; }

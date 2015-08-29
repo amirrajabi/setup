@@ -185,7 +185,7 @@ module.exports = function (grunt) {
                 },
                 scss: {
                     files: ['<%= pkg.styleSource %>/**/*.scss'],
-                    tasks: ['newer:sass', 'autoprefixer']
+                    tasks: ['sass', 'autoprefixer', 'cssmin']
                 },
                 script:{
                     files: ['<%= pkg.scriptSource %>/**/*.js'],

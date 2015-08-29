@@ -2,5 +2,7 @@
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 
 //Custom styles
+@import "modules/variables";
 @import "modules/font-icon";
+@import "modules/base";
 @import "modules/test";
