@@ -1,8 +1,7 @@
-html,
-body{
-  background-color: #f5871f;
-}
+$module: "test";
 
-div {
-  //transform: rotate(7deg);
+.#{$module} {
+
+  color: $white;
+
 }
